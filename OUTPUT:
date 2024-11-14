@@ -1,0 +1,76 @@
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| act_student_db     |
+| amazon             |
+| bankdb             |
+| information_schema |
+| mysql              |
+| oct_act_2024_db    |
+| performance_schema |
+| sys                |
++--------------------+
+8 rows in set (0.00 sec)
+
+mysql> use amazon;
+Database changed
+mysql> show tables;
++------------------+
+| Tables_in_amazon |
++------------------+
+| orders           |
+| persons          |
++------------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from persons;
++-----+---------+------------+
+| ID  | PNAME   | PPHONE     |
++-----+---------+------------+
+| 101 | Deekshu | 9986543213 |
+| 102 | NANI    | 9986546613 |
+| 103 | NUMB    | 9986546612 |
+| 104 | Veekshu | 9876543213 |
+| 105 | SRAVANI | 9786846612 |
++-----+---------+------------+
+5 rows in set (0.00 sec)
+
+mysql> SHOW TABLES;
++------------------+
+| Tables_in_amazon |
++------------------+
+| orders           |
+| persons          |
++------------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from orders;
++-------+------+------+
+| OID   | DPIN | ID   |
++-------+------+------+
+| 11122 | 7654 |  101 |
++-------+------+------+
+1 row in set (0.00 sec)
+
+mysql> select * from orders;
++-------+------+------+
+| OID   | DPIN | ID   |
++-------+------+------+
+| 11122 | 7654 |  101 |
+| 11522 | 7694 |  102 |
+| 19122 | 7054 |  103 |
++-------+------+------+
+3 rows in set (0.00 sec)
+
+mysql> select * from orders;
++-------+------+------+
+| OID   | DPIN | ID   |
++-------+------+------+
+| 11122 | 7654 |  101 |
+| 11522 | 7694 |  102 |
+| 19122 | 7054 |  103 |
+| 12122 | 7094 |  104 |
+| 12188 | 7095 |  105 |
++-------+------+------+
+5 rows in set (0.00 sec)
